@@ -1,0 +1,250 @@
+/*write some responsive code here */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+@media (min-width: 1500px) {
+  .page-title h1.email {
+  font-size: 50px;
+  width:75%;
+}
+
+}
+
+@media (max-width: 975px){
+  #team-about {
+    padding:120px 0 100px 0;
+  }
+
+    #about .img-about {
+      width: 420px;
+      margin-top: 0;
+  }
+
+    #about .about-img {
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+
+  #about .about-img img{
+    margin: 0 auto;
+  }
+
+  #about .skills h2, #about .skills h5 {
+    text-align: center;
+  }
+
+  #about .skills hr.hairline-half{
+    margin: 30px auto 0;
+    float: none;
+  }
+
+    #about .skills.personal-info{
+    margin-top: 30px;
+  }
+
+  .page-title h1.email {
+  font-size: 40px;
+  }
+}
+@media (max-width: 900px){
+    .drop-cta.work-video {
+    padding: 100px 0 50px 0;
+  }
+
+  .row img.contact-cta-img {
+  width: 87%;
+}
+
+}
+
+@media (max-width: 767px) {
+
+  #footer i.fa {
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
+    padding: 8px 10px;
+    color: #A7A7A7;
+    transition: all 0.5s;
+  }
+
+  .page-title h1.email {
+  font-size: 26px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .page-title .container {
+    margin: 20px;
+  }
+
+
+  .menu-wrapper header .mobile-menu {
+    display: block;
+  }
+
+  .menu-wrapper header {
+    margin-top: 0;
+  }
+
+  .menu-wrapper header .logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    line-height: 0;
+  }
+  .menu-wrapper header .logo img {
+    width: 100px;
+  }
+
+  .menu-wrapper header nav {
+    float: left;
+    line-height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #3b3b3b;
+  }
+
+  .menu-wrapper header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 8px 15px;
+    text-align: center;
+  }
+
+  .menu-wrapper header nav ul li ul {
+    display: block;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    border: none;
+
+  }
+
+  .menu-wrapper header nav ul li ul li {
+    padding: 0;
+  }
+
+  .menu-wrapper header nav ul li ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-wrapper header nav ul li ul li a {
+    padding: 8px 20px;
+    color: #848484;
+  }
+
+  .menu-wrapper header nav ul li ul li ul {
+    display: block;
+    position: relative;
+    left: 0;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border: none;
+  }
+
+  .menu-wrapper header nav ul li ul li ul li {
+    margin-left: 12px !important;
+  }
+
+  .menu-wrapper header nav ul li a {
+    font-size: 13px;
+  }
+
+  .about-number {
+    flex: 100px;
+  }
+
+  .page-title h1 {
+    font-size: 74px;
+  }
+
+  .drop-cta.work-video {
+    padding: 100px 0 100px 0;
+    margin: 20px 20px;
+  }
+
+  .about-text h3 {
+    text-align: center;
+  }
+
+  p.footnote {
+    font-size: 14px;
+  }
+
+  .row.portfolio-image {
+  padding: 0;
+  margin: 20px auto;
+}
+
+  .about-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .atom-work-item .desc h5 {
+    font-size: 30px;
+  }
+
+  .atom-work-item .desc p {
+    font-size: 24px;
+  }
+
+    .our-focuses {
+    margin-top: 70px;
+  }
+
+  #go-top {
+    margin-top: 40px;
+  }
+
+  .about-text {
+  margin-bottom: 70px;
+  }
+
+  .page-title p{
+    width: auto;
+  }
+
+  #team-about hr.hairline-half {
+  width:30%;
+  margin: 0 auto 10px;
+}
+
+.work-grids-area {
+  margin-bottom: 80px;
+}
+.page-title h1 {
+  margin-bottom: 20px;
+}
+
+.row .heading-border-long {
+  width: 150px;
+}
+
+h2 {
+  text-align:center;
+}
+
+
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .page-title h1 {
+    font-size: 46px;
+  }
+  .atom-portfolio-filter a {
+    margin-bottom: 15px;
+  }
+
+  .page-title h1.email {
+  font-size: 18px;
+  }
+  .page-title h4 {
+    font-size: 15px;
+  }
+}
+/* portrait phones */
