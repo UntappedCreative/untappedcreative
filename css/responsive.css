@@ -69,7 +69,7 @@
   }
 
   .page-title h1.email {
-  font-size: 26px;
+  font-size: 20px;
   }
 
   body {
@@ -151,7 +151,7 @@
   }
 
   .menu-wrapper header nav ul li a {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .about-number {
@@ -190,7 +190,7 @@
   }
 
   .atom-work-item .desc p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
     .our-focuses {
@@ -221,12 +221,16 @@
   margin-bottom: 20px;
 }
 
-.row .heading-border-long {
-  width: 150px;
+.container .heading-border-long {
+  width: 100px;
 }
 
 h2 {
   text-align:center;
+}
+
+p {
+	font-size: 15px !important;
 }
 
 
