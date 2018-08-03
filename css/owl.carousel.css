@@ -39,7 +39,7 @@
 	
 .owl-carousel .owl-item{
 	float: left;
-  cursor: url("../images/grabbing.png") 26 8, auto;
+  cursor: url("https://untappedcreative.com/images/grabbing.png") 26 8, auto;
 }
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
@@ -56,7 +56,7 @@
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url("../images/grabbing.png") 8 8, move;
+    cursor:url("https://untappedcreative.com/images/grabbing.png") 8 8, move;
 
 }
 
