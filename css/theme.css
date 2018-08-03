@@ -25,16 +25,16 @@
 
 @font-face {
    font-family: HendersonLight;
-   src: url(fonts/HendersonSlab-ExLt.otf);
+   src: url(https://untappedcreative.com/fonts/HendersonSlab-ExLt.otf);
    font-weight: light;
 }
 @font-face {
    font-family: Henderson;
-   src: url(fonts/HendersonSlab-Reg.otf);
+   src: url(https://untappedcreative.com/fonts/HendersonSlab-Reg.otf);
 }
 @font-face {
    font-family: HendersonBold;
-   src: url(fonts/HendersonSlab-Bd.otf);
+   src: url(https://untappedcreative.com/fonts/HendersonSlab-Bd.otf);
    font-weight: bold;
 }
 body {
@@ -905,7 +905,7 @@ hr.hairline-half {
 .at-column {
   z-index: 0;
   position: relative;
-  background-image: url(/images/noise-361x370.png);
+  background-image: url(https://untappedcreative.com/images/noise-361x370.png);
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid white;
@@ -986,7 +986,7 @@ hr.hairline-half {
 }
 
 #testimonials {
-    background: url(../images/noise-361x370.png);
+    background: url(https://untappedcreative.com/images/noise-361x370.png);
     background-position: center;
     background-attachment: fixed;
     color: #ffffff;
