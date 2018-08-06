@@ -123,6 +123,7 @@ ul {
   white-space: nowrap;
   left: 0;
   top: 0;
+  color: #545554;
 }
 .strike-words-wrapper b.is-visible {
   position: relative;
@@ -245,6 +246,10 @@ p.stand-out {
 
 .yellow {
   color: #e9b956;
+}
+
+.grey {
+  color:#A5A4A4;
 }
 
 .page-content {
