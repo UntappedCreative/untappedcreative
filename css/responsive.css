@@ -159,7 +159,7 @@
   }
 
   .page-title h1 {
-    font-size: 74px;
+    font-size: 68px;
   }
 
   .drop-cta.work-video {
@@ -238,7 +238,7 @@ p {
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .page-title h1 {
-    font-size: 46px;
+    font-size: 44px;
   }
   .atom-portfolio-filter a {
     margin-bottom: 15px;
