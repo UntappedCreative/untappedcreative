@@ -275,11 +275,9 @@ p {
  .atom-work-item .desc p {
     font-size: 15px !important;
  }
-  
- .process-text h3 {
-   font-size: 24px;
-  }
+ 
 }
+
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .page-title h1 {
@@ -294,6 +292,9 @@ p {
   }
   .page-title h4 {
     font-size: 13px;
+  }
+   .process-text h3 {
+   font-size: 24px;
   }
 }
 /* portrait phones */
