@@ -42,7 +42,6 @@ body {
   font-weight: regular;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  background-color: #f7f7f7;
   font-size: 16px;
   line-height: 25px;
   color: #545554;
@@ -97,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: HendersonBold, sans-serif;
+  font-family: Henderson, sans-serif;
 }
 
 .text-center {
@@ -124,6 +123,7 @@ ul {
   left: 0;
   top: 0;
   color: #545554;
+  font-weight:lighter;
 }
 .strike-words-wrapper b.is-visible {
   position: relative;
@@ -197,6 +197,14 @@ p.stand-out {
 .drop-cta  {
   color: white;
 }
+
+.drop-cta h1 {
+  transition: ease all .4s;
+}
+
+a:hover .drop-cta h1 {
+  color: #e9b956;
+}
 .bigfont {
   font-size: 50px;
 }
@@ -215,7 +223,11 @@ p.stand-out {
 }
 
 .drop-cta.work-video {
-  padding: 100px 0 80px;
+  padding: 100px 50px 80px;
+}
+.drop-cta.blog-highlight {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .drop-cta.work-video-interior {
@@ -312,17 +324,60 @@ hr.top {
   border-radius: 0;
 }
 
+.btn-wide {
+  width:500px;
+}
+.contact-btn {
+  margin: 25px auto 100px;
+}
+
 .centered {
   text-align: center;
 }
 
 .space-below {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .space-top {
-  margin-top: 80px;
+  margin-top: 100px;
 }
+
+.process img {
+  width:80%;
+  margin: 20px auto;
+  margin-left: 45px;
+  margin-top: 100px;
+}
+
+.process-bg {
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:.8;
+  width:100%;
+}
+
+.container.page-top h1 {
+  font-weight: bolder;
+}
+
+.row.process-bg {
+  margin-left:0;
+}
+
+.col-xs-5.process-text {
+  margin-left:100px;
+  margin-top:75px;
+}
+
+.process-text h3 {
+  font-size: 40px;
+}
+
+.process-text h3.yellow {
+  font-family:HendersonBold;
+  }
 
 /* =========================================================== 
     03. NAV MENU
@@ -341,6 +396,12 @@ hr.top {
   width:140px;
   margin-top: 5px;
 }
+
+#main-menu a.navbar-brand {
+    padding-left: 0;
+    padding-right: 4px;
+}
+
 #main-menu.navbar-default .navbar-nav > li > a {
     text-transform: lowercase;
     font-family: Henderson, serif;
@@ -433,8 +494,9 @@ li {
    04. PAGE TITLE
 ============================================================ */
 .page-title {
-  padding: 40px 0 0;
+  padding: 40px 0px 40px 40px;
 }
+
 .page-title h1 {
   font-size: 80px;
   line-height: 1.2;
@@ -445,8 +507,6 @@ li {
 .page-title h1.email {
   font-size: 46px;
 }
-
-
 
 .page-title h4 {
   margin-top: 30px;
@@ -468,6 +528,16 @@ li {
   color:#a5a4a4;
 }
 
+.row.masonry {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.page-title.blog-page {
+  margin-top: 100px; 
+  margin-bottom: 100px;
+}
+
 .row .heading-border {
   width: 110px;
   margin: 0px 0px 40px 0px;
@@ -478,15 +548,6 @@ li {
   margin: 0px 0px 20px 0px;
 }
 
-.email-contact .heading-border {
-  width: 110px;
-  margin: 0px 0px 40px 0px;
-}
-
-.email-contact .heading-border-long {
-  width: 350px;
-  margin: 0px 0px 20px 0px;
-}
 
 .typed-cursor {
   opacity: 1;
@@ -533,30 +594,32 @@ li {
 /* =========================================================== 
     05. WORK GRID STYLE
 ============================================================ */
+.atom-portfolio-filter {
+  margin-bottom: 30px;
+  margin-top: 150px;
+  margin-left: 5px;
+}
+.atom-portfolio-filter a {
+  color: #747474;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0 15px;
+  position: relative;
+  display: inline-block;
+}
+
 .atom-work-item {
-  padding-left: 0;
+  padding:40px;
   padding-bottom: 15px;
 }
-.atom-work-item a {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  color: #3b3b3b;
-}
-.atom-work-item .desc {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  margin: 0 auto;
-}
+
 .atom-work-item .desc h5 {
   font-size: 19px;
   font-weight: 700;
   word-spacing: 3px;
   color: #545554;
 }
+
 .atom-work-item .desc p {
   text-transform: lowercase;
   font-family: HendersonLight;
@@ -566,52 +629,77 @@ li {
   font-weight: 500;
 }
 
-.hover-one .atom-work-item a:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  transition: all 0.3s ease 0.1s;
-  background-color: rgba(255, 255, 255, 0.8);
-  opacity: 0;
+.hover-one .atom-work-item img {
+  transition: all 0.5s ease .2s;
 }
 
-.hover-one .atom-work-item img {
-  transition: all 0.5s ease 0s;
+.hover-one .atom-work-item img:hover {
+  transform: translateY(-2%);
+  opacity:.5;
+}
+
+.hover-one .atom-work-item a:hover img {
+  transform: translateY(-2%);
+  opacity:.5;
 }
 
 .hover-one .atom-work-item .desc {
-  text-align: center;
+  text-align: left;
+  margin-top: 30px;
 }
 
 .hover-one .atom-work-item .desc h5,
 .hover-one .atom-work-item .desc p {
   transition: all 0.3s ease 0.2s;
-  opacity: 0;
-}
-
-.hover-one .atom-work-item .desc h5 {
-  transform: translateY(60%);
-}
-
-.hover-one .atom-work-item .desc p {
-  transform: translateY(-60%);
-}
-
-.hover-one .atom-work-item:hover a:after {
-  opacity: 1;
-}
-
-.hover-one .atom-work-item:hover h5,
-.hover-one .atom-work-item:hover p {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .work-grids-area {
   margin-bottom: 110px ;
+}
+
+.work-grids-area .desc {
+  margin-bottom: 60px;
+}
+
+.hover-one .atom-work-item .desc h5 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.hover-one .atom-work-item .desc h5:before, .hover-one .atom-work-item .desc h5:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+.hover-one .atom-work-item .desc h5:before {
+  left: -2.5px;
+}
+.hover-one .atom-work-item .desc h5:after {
+  right: 2.5px;
+  background: #e9b956;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.hover-one .atom-work-item .desc h5:hover:before {
+  background: #e9b956;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.hover-one .atom-work-item .desc h5:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.hover-one .atom-work-item .desc {
+  margin-right: 80px;
 }
 
 /* =========================================================== 
@@ -654,6 +742,13 @@ li {
 .email-contact {
   width: 80%;
 }
+
+.email-contact p.intro {
+  font-family:Hendersonlight;
+  font-size: 20px; 
+  font-style:normal;
+  color:#A5A4A4;
+}
  
 .go-totop {
     background-color: #747474;
@@ -687,6 +782,10 @@ li {
   width: 52%;
   margin: 10px, auto;
   padding-left: 10px;
+}
+
+.contact-cta h2 {
+  font-size: 60px;
 }
 
 
@@ -849,15 +948,16 @@ hr.hairline-half {
 }
 
 .about-leader {
-  margin: 50px auto;
+  margin: 50px auto 0;
   color: #a5a4a4;
   padding: 0 50px 0 50px;
 }
 
-.about-leader p {
-  font-size: 17px; 
+.about-leader p, .portfolio-desc p.intro {
+  font-family:Hendersonlight;
+  font-size: 20px; 
   line-height: 2;
-  font-style: italic;
+  text-align: center;
 }
 
 /* =========================================================== 
@@ -910,11 +1010,11 @@ hr.hairline-half {
 .at-column {
   z-index: 0;
   position: relative;
-  background-image: url(https://untappedcreative.com/images/noise-361x370.png);
+  background-color: #E8E8E8;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid white;
-  transition: all .5s ease, -webkit-transform .5s ease;
+  transition: all ease 1s;
 }
 .at-column:before {
   content: "";
@@ -922,14 +1022,14 @@ hr.hairline-half {
   padding-top: 100%;
 }
 .at-column:hover {
-  z-index: 1;
-  background: #fff;
-  transition:  background ease-in-out .5s;
+  background-color: #fff;
+  transition: all ease 1s;
 }
 
-.at-column:after {
-  transition: ease-out .5s;
+.at-column:hover .at-user__avatar{
+  transform: translateY(-2%);
 }
+
 @media (max-width: 800px) {
   .at-column {
     width: 50% !important;
@@ -961,11 +1061,13 @@ hr.hairline-half {
   border-radius: 100%;
   margin: 0 auto 20px;
   overflow: hidden;
+  transition: ease all 1s;
 }
 .at-user__avatar img {
   display: block;
   width: 100%;
   max-width: 100%;
+  transition: ease all 1s;
 }
 .at-user__name {
   color: #545554;
@@ -988,6 +1090,7 @@ hr.hairline-half {
 
 .section-title {
   margin: 0 0 15px 0;
+  z-index: 1;
 }
 
 #testimonials {
@@ -1032,12 +1135,13 @@ hr.hairline-half {
     height: auto;
 }
 #testimonial .item h5 {
-    font-family: HendersonBold;
-    font-size: 15px;
-    color: #192325;
-    text-transform: none;
-    line-height: 32px;
-    padding: auto 100px;
+  font-family:Henderson;
+  font-size: 20px; 
+  line-height: 2;
+  text-align: center;
+  color:#192325;
+  text-transform: none;
+  padding: auto 100px;
 }
 
 #testimonial .item h5 i {
@@ -1074,8 +1178,91 @@ hr.hairline-half {
 }
 
 /* =========================================================== 
+   9. Blog
+============================================================ */
+
+.blog-list h2.blog-title a{
+  color: #545554;
+}
+.blog-list img {
+  transition:ease all .5s;
+}
+
+.blog-list img:hover {
+  transform: translateY(-2%);
+  opacity:.5;
+}
+
+.blog-link {
+  width: 50%;
+}
+
+
+h2.blog-title {
+  font-size: 20px;
+}
+
+p.blog-desc {
+  margin-bottom: 22px;
+  font-family:signika,sans-serif;
+  font-weight:lighter;
+  color: #545454;
+}
+
+a:hover .blog-highlight h1{
+transition: all .2s;
+color: #E9B956;
+}
+
+.row a span {
+  font-family: HendersonBold, serif;
+  font-size: 20px;
+  margin-bottom: 100px;
+  color: #545554;
+}
+
+.blog-list {
+  margin-bottom: 80px;
+}
+
+.blog-list i {
+  font-family: Signika;
+  opacity:.7;
+  font-weight:lighter;
+}
+
+a .blog-highlight h1{
+transition: all .3s;
+}
+
+
+/* =========================================================== 
    10. PORTFOLIO PROJECT PAGE
 ============================================================ */
+.process-link {
+  width:300px;
+  font-family:Henderson;
+  font-size: 20px;
+  color:#E9B956;
+  margin-left: 10px;
+}
+
+
+a.process-link:hover {
+  color:#E9B956;
+}
+.process-highlight .col-xs-12 p {
+  margin-top: 20px;
+  line-height: 2;
+  padding: 0 20px;
+}
+
+i.process-icon {
+  margin-top: 30px;
+  font-size: 45px;
+  color:#545454;
+}
+
 
 .page-top {
   margin-top: 100px;
@@ -1087,6 +1274,10 @@ hr.hairline-half {
 
 .container.page-bottom {
   margin-bottom: 55px;
+}
+
+.container.team-title {
+  margin-bottom: 40px;
 }
 
 .portfolio-desc{
@@ -1113,17 +1304,9 @@ hr.hairline-half {
   width: 100%;
 }
 
-.portfolio-desc p {
-  font-size: 17px; 
-  line-height: 2;
-  font-style: italic;
-  color: #545554;
-}
-
 .section-title.portfolio-desc-title {
   margin: 0;
 }
-
 
 .container a {
   position: relative;
@@ -1150,6 +1333,10 @@ hr.hairline-half {
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
+.container a.grey:after, .container a.grey:hover:before {
+  background: #545454;
+}
+
 .container a:hover:before {
   background: #e9b956;
   width: 100%;
@@ -1174,6 +1361,7 @@ hr.hairline-half {
 .container h1.email a{
     color: #e9b956;
 }
+
 
 /* =========================================================== 
    10. TEAM SECTION
@@ -1241,6 +1429,7 @@ input:focus,
 textarea:focus {
   border-color: #545554;
 }
+
 
 .btn-theme,
 .btn-dark:hover,
