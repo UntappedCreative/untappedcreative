@@ -229,10 +229,6 @@
   }
 
   .atom-work-item .desc h5 {
-    font-size: 30px;
-  }
-
-  .atom-work-item .desc p {
     font-size: 20px;
   }
 
@@ -275,7 +271,10 @@ h2 {
 p {
   font-size: 12px !important;
 }
-
+  
+ .atom-work-item .desc p {
+    font-size: 15px;
+ }
 
 }
 /* Landscape phones and smaller */
