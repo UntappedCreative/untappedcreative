@@ -1263,6 +1263,17 @@ i.process-icon {
   color:#545454;
 }
 
+img.icon {
+  width:40%;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  transition: ease all .5s;
+}
+
+img.icon:hover {
+ transform: translateY(-2%);
+}
+
 
 .page-top {
   margin-top: 100px;
