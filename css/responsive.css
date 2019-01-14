@@ -5,12 +5,55 @@
 @media (min-width: 1500px) {
   .page-title h1.email {
   font-size: 50px;
-  width:75%;
+  width:95%;
 }
 
+.container.container-big {
+  width:1400px;
+}
+}
+
+@media (max-width:1400px) {
+    .page-title h1.email {
+  width:100%;
+  font-size: 38px;
+}
 }
 
 @media (max-width: 975px){
+
+  .col-xs-5.process {
+    width:100%;
+    margin: 0 auto;
+  }
+
+  .col-xs-5.process-text {
+    width:95%;
+    margin:0 auto;
+    margin-top: 15px;
+  }
+
+  .space-below.mobile-smaller {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .space-below.mobile-hide {
+  margin-bottom: 0px;
+  }
+
+  .process-bg .bg-img {
+    background-size:initial;
+  }
+
+  .row.process-bg {
+    overflow: hidden;
+  }
+
+  .page-title {
+    padding: 20px;
+  }
+
   #team-about {
     padding:120px 0 100px 0;
   }
@@ -69,9 +112,9 @@
   }
 
   .page-title h1.email {
-  font-size: 20px;
+  font-size: 15px;
   }
-
+  
   body {
     font-size: 14px;
   }
@@ -159,7 +202,7 @@
   }
 
   .page-title h1 {
-    font-size: 48px;
+    font-size: 74px;
   }
 
   .drop-cta.work-video {
@@ -238,14 +281,14 @@ p {
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .page-title h1 {
-    font-size: 40px;
+    font-size: 46px;
   }
   .atom-portfolio-filter a {
     margin-bottom: 15px;
   }
 
   .page-title h1.email {
-  font-size: 16px;
+  font-size: 15px;
   }
   .page-title h4 {
     font-size: 13px;
