@@ -18,15 +18,34 @@
   width:100%;
   font-size: 38px;
 }
+
 }
 
 @media (max-width: 975px){
 
-  .col-xs-5.process {
-    width:95%;
-    margin: 0 auto;
+  .drop-cta.personal-info p {
+  width:90%;
   }
 
+  #team-about .about-text p {
+  width: 100%;
+}
+
+  .btn-wide, .btn {
+    width:85%;
+  }
+
+  .col-xs-5.process {
+    width:275px;
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .process img {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 5%;
+  }
   .col-xs-5.process-text {
     width:95%;
     margin:0 auto;
@@ -55,25 +74,22 @@
   }
 
   #team-about {
-    padding:120px 0 100px 0;
+    padding:120px 0 0 0;
   }
 
-    #about .img-about {
-      width: 420px;
-      margin-top: 0;
-  }
 
-    #about .about-img {
+    .about-img {
     margin: 0 auto 0 auto;
     text-align: center;
+    margin-bottom: 90px;
   }
 
-  #about .about-img img{
+  .personal-info {
+  padding-left: 20px;
+}
+
+.about-img img{
     margin: 0 auto;
-  }
-
-  #about .skills h2, #about .skills h5 {
-    text-align: center;
   }
 
   #about .skills hr.hairline-half{
@@ -90,13 +106,24 @@
   }
 }
 @media (max-width: 900px){
+  ul.nav {
+    margin-right:0;
+  }
     .drop-cta.work-video {
     padding: 100px 0 50px 0;
   }
 
   .row img.contact-cta-img {
   width: 87%;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+
+img.icon {
+  margin-bottom: 0;
 }
+
 
 }
 
@@ -110,9 +137,68 @@
     color: #A7A7A7;
     transition: all 0.5s;
   }
+  h2 {
+    font-size: 24px;
+    font-weight:bolder;
+    line-height: 1.2;
+  }
+
+  .contact-cta h2 {
+    font-weight:bolder;
+    font-size:36px;
+  }
+
+  .page-title .container.container-big {
+    padding:0;
+  }
+  .mobile-show {
+    display:block;
+  }
+  .container.page-bottom {
+    margin-bottom: 0;
+  }
+  .mobile-hide {
+  display:none;
+  }
+
+  .container.team-title {
+    margin-bottom:5px;
+  }
+
+  .row a span{
+    font-size:16px;
+  }
+
+  .btn a {
+    font-size: 16px;
+  }
+
+  .portfolio-desc {
+    padding: 0 20px;
+    margin: 20px auto;
+  }
+
+  .btn {
+    margin: 25px auto 50px auto;
+  }
+
+  h3 {
+    font-size:20px;
+    line-height: 1.2;
+  }
+  #testimonial .item h5 {
+    font-size:16px;
+  }
+  .personal-info p {
+    width:100%;
+  }
+  .at-grid {
+    margin-left: 20px;
+    margin-right:20px;
+  }
 
   .page-title h1.email {
-  font-size: 15px;
+  font-size: 16px;
   }
   
   body {
@@ -122,6 +208,9 @@
   .page-title .container {
     margin: 20px;
   }
+  .email-contact {
+  width: 100%;
+}
 
 
   .menu-wrapper header .mobile-menu {
@@ -153,7 +242,7 @@
 
   .menu-wrapper header nav ul li {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 8px 15px;
     text-align: center;
   }
@@ -210,10 +299,6 @@
     margin: 20px 20px;
   }
 
-  .about-text h3 {
-    text-align: center;
-  }
-
   p.footnote {
     font-size: 14px;
   }
@@ -231,6 +316,7 @@
   .atom-work-item .desc h5 {
     font-size: 20px;
   }
+
 
     .our-focuses {
     margin-top: 70px;
@@ -250,7 +336,7 @@
 
   #team-about hr.hairline-half {
   width:30%;
-  margin: 0 auto 10px;
+  margin: 10px 0;
 }
 
 .work-grids-area {
@@ -264,24 +350,20 @@
   width: 100px;
 }
 
-h2 {
-  text-align:center;
+p.intro, .desc p {
+	font-size: 13px !important;
 }
-
-p {
-  font-size: 12px !important;
-}
-  
- .atom-work-item .desc p {
-    font-size: 15px !important;
- }
  
-}
+.atom-work-item .desc p {
+    font-size: 18px;
+  }
 
+
+}
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .page-title h1 {
-    font-size: 41px;
+    font-size: 42px;
   }
   .atom-portfolio-filter a {
     margin-bottom: 15px;
@@ -293,8 +375,4 @@ p {
   .page-title h4 {
     font-size: 13px;
   }
-   .process-text h3 {
-   font-size: 29px;
-  }
 }
-/* portrait phones */
