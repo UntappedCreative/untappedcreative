@@ -410,6 +410,10 @@ hr.top {
     letter-spacing: 1px;
 }
 
+#main-menu.navbar-default .navbar-nav > li > a.yellow {
+    color: #e9b956;
+}
+
 .navbar {
   border: none;
 }
@@ -478,10 +482,18 @@ li {
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
+#main-menu.navbar-default .navbar-nav > li > a.grey:after {
+  background: #545454;
+}
+
 #main-menu.navbar-default .navbar-nav > li > a:hover:before {
   background: #e9b956;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#main-menu.navbar-default .navbar-nav > li > a.grey:hover:before {
+  background: #545454;
 }
 
 #main-menu.navbar-default .navbar-nav > li > a:hover:after {
