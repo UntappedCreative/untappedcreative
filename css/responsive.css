@@ -8,6 +8,10 @@
   width:95%;
 }
 
+.col-md-5.about-img img {
+  width:75%;
+}
+
 .container.container-big {
   width:1400px;
 }
@@ -22,6 +26,79 @@
 }
 
 @media (max-width: 975px){
+
+   .menu-wrapper header .mobile-menu {
+    display: block;
+  }
+
+  .menu-wrapper header {
+    margin-top: 0;
+  }
+
+  .menu-wrapper header .logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    line-height: 0;
+  }
+  .menu-wrapper header .logo img {
+    width: 100px;
+  }
+
+  .menu-wrapper header nav {
+    float: left;
+    line-height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #3b3b3b;
+  }
+
+  .menu-wrapper header nav ul li {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 15px;
+    text-align: center;
+  }
+
+  .menu-wrapper header nav ul li ul {
+    display: block;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    border: none;
+
+  }
+
+  .menu-wrapper header nav ul li ul li {
+    padding: 0;
+  }
+
+  .menu-wrapper header nav ul li ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-wrapper header nav ul li ul li a {
+    padding: 8px 20px;
+    color: #848484;
+  }
+
+  .menu-wrapper header nav ul li ul li ul {
+    display: block;
+    position: relative;
+    left: 0;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border: none;
+  }
+
+  .menu-wrapper header nav ul li ul li ul li {
+    margin-left: 12px !important;
+  }
+
+  .menu-wrapper header nav ul li a {
+    font-size: 15px;
+  }
 
   .drop-cta.personal-info p {
   width:90%;
@@ -124,7 +201,6 @@ img.icon {
   margin-bottom: 0;
 }
 
-
 }
 
 @media (max-width: 767px) {
@@ -212,79 +288,6 @@ img.icon {
   width: 100%;
 }
 
-
-  .menu-wrapper header .mobile-menu {
-    display: block;
-  }
-
-  .menu-wrapper header {
-    margin-top: 0;
-  }
-
-  .menu-wrapper header .logo {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    line-height: 0;
-  }
-  .menu-wrapper header .logo img {
-    width: 100px;
-  }
-
-  .menu-wrapper header nav {
-    float: left;
-    line-height: 30px;
-    margin-top: 5px;
-    width: 100%;
-    padding-top: 20px;
-    background-color: #3b3b3b;
-  }
-
-  .menu-wrapper header nav ul li {
-    display: block;
-    margin: 0 auto;
-    padding: 8px 15px;
-    text-align: center;
-  }
-
-  .menu-wrapper header nav ul li ul {
-    display: block;
-    position: relative;
-    opacity: 1;
-    visibility: visible;
-    border: none;
-
-  }
-
-  .menu-wrapper header nav ul li ul li {
-    padding: 0;
-  }
-
-  .menu-wrapper header nav ul li ul li:last-child {
-    border-bottom: none;
-  }
-
-  .menu-wrapper header nav ul li ul li a {
-    padding: 8px 20px;
-    color: #848484;
-  }
-
-  .menu-wrapper header nav ul li ul li ul {
-    display: block;
-    position: relative;
-    left: 0;
-    opacity: 1 !important;
-    visibility: visible !important;
-    border: none;
-  }
-
-  .menu-wrapper header nav ul li ul li ul li {
-    margin-left: 12px !important;
-  }
-
-  .menu-wrapper header nav ul li a {
-    font-size: 15px;
-  }
 
   .about-number {
     flex: 100px;
@@ -376,3 +379,4 @@ p.intro, .desc p {
     font-size: 13px;
   }
 }
+/* portrait phones */
